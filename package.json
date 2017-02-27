@@ -9,13 +9,13 @@
     "url": "git+https://github.com/datacite/mastiff.git"
   },
   "engines": {
-    "node": ">=0.6.11 <0.11"
+    "node": "*"
   },
   "dependencies": {
-    "connect": ">=2.2.1 <=2.29.1",
-    "jsdom": ">=0.2.0 <=0.2.14",
+    "connect": "3.6",
+    "jsdom": "9.11.0",
     "mocha": "*",
-    "request": "2.9.202",
+    "request": "2.79.0",
     "should": "^11.2.0"
   },
   "devDependencies": {
