@@ -1,5 +1,7 @@
 public/locales/*
 public/styles/*
+!/public/locales/*xml
+!public/styles/*.csl
 public/index.html
 node_modules/
 .env

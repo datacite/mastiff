@@ -3,3 +3,7 @@ vendor/docker/
 Dockerfile
 docker-compose.yml
 .dockerignore
+public/locales/*
+public/styles/*
+!/public/locales/*xml
+!public/styles/*.csl
