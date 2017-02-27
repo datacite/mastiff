@@ -1,11 +1,11 @@
-# @kgarza/citeproc-doi [![Build Status](https://travis-ci.org/crosscite/citeproc-doi-server.png?branch=master)](https://travis-ci.org/crosscite/citeproc-doi-server)
+# @datacite/mastiff [![Build Status](https://travis-ci.org/datacite/mastiff.png?branch=master)](https://travis-ci.org/datacite/mastiff)
 
 Nodejs server for formatted citation of dois
 
 ## Installation
 
 ```sh
-npm install @kgarza/citeproc-doi --save
+npm install @datacite/mastiff --save
 ```
 
 
@@ -17,11 +17,9 @@ npm test
 ```
 ```
 
-> @kgarza/citeproc-doi@0.0.1 test /Users/Kristian/datacite/citeproc-doi-server
+> @datacite/mastiff@0.0.1 test /Users/Kristian/datacite/mastiff
 > node spec/test.js
 Garza, Kristian, Carole Goble, John Brooke, and Caroline Jay. 2015. ‘Framing the Community Data System Interface’. Proceedings of the 2015 British HCI Conference on - British HCI ’15. Association for Computing Machinery (ACM). doi:10.1145/2783446.2783605.
-Garza, Kristian, Carole Goble, John Brooke, and Caroline Jay. 2015. ‘Framing the Community Data System Interface’. Proceedings of the 2015 British HCI Conference on - British HCI ’15. Association for Computing Machinery (ACM). doi:10.1145/2783446.2783605.
-Garza, K., Goble, C., Brooke, J., & Jay, C. (2015). Framing the community data system interface. Proceedings of the 2015 British HCI Conference on - British HCI ’15. Association for Computing Machinery (ACM). https://doi.org/10.1145/2783446.2783605
 
 ```
 
@@ -40,4 +38,4 @@ Garza, K., Goble, C., Brooke, J., & Jay, C. (2015). Framing the community data s
 
 ## License
 
-ISC
+MIT
