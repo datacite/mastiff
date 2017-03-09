@@ -119,18 +119,18 @@ function Cite() {
 
 
 
-Cite.formatHandler = function(req) {
+Cite.formatHandler = function(req, callback) {
 	var query = req.query;
 	var doi = query.doi;
 	if (doi == undefined)
-		console.log("doi param required");
+		console.log("DOI parameter required");
 	else {
 		require("./doi").resolve(
 				doi,
 				function(data) {
 					try {
 						req.body = JSON.parse(data);
-						Cite.formatPostHandler(req);
+						Cite.formatPostHandler(req, callback);
 					} catch (err) {
 						console.log("error while formatting");
 					}
@@ -142,19 +142,22 @@ Cite.formatHandler = function(req) {
 	}
 }
 
-Cite.formatPostHandler = function(req) {
+Cite.formatPostHandler = function(req, callback) {
 	citeproc.format(
 			req.body,
 			req.query.style,
 			req.query.lang,
 			function(text) {
-				console.log(text);
+				callback(text);
+				// console.log(text);
 			}, function(msg) {
 				console.log(msg);
 			}
 	);
 }
 
-
+Cite.execute = function(req, callback) {
+  Cite.formatHandler(req, callback);
+}
 
 module.exports = Cite;
