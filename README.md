@@ -17,7 +17,7 @@ npm test
 ```
 ```
 
-> @datacite/mastiff@0.0.1 test /Users/Kristian/datacite/mastiff
+> @datacite/mastiff@0.0.7 test /Users/Kristian/datacite/mastiff
 > node spec/test.js
 Garza, Kristian, Carole Goble, John Brooke, and Caroline Jay. 2015. ‘Framing the Community Data System Interface’. Proceedings of the 2015 British HCI Conference on - British HCI ’15. Association for Computing Machinery (ACM). doi:10.1145/2783446.2783605.
 
@@ -26,9 +26,9 @@ Garza, Kristian, Carole Goble, John Brooke, and Caroline Jay. 2015. ‘Framing t
 ## Dependencies
 
 - [connect](https://github.com/senchalabs/connect): High performance middleware framework
-- [jsdom](https://github.com/tmpvar/jsdom): A javascript implementation of the W3C DOM
+- [jsdom](https://github.com/tmpvar/jsdom): A JavaScript implementation of the DOM and HTML standards
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
-- [request](https://github.com/mikeal/request): Simplified HTTP request client.
+- [request](https://github.com/request/request): Simplified HTTP request client.
 - [should](https://github.com/shouldjs/should.js): test framework agnostic BDD-style assertions
 
 ## Dev Dependencies
